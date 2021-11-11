@@ -1,0 +1,26 @@
+{
+  "name": "caso-practico-mocha---appsalud-tsteam",
+  "version": "1.0.0",
+  "description": "[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6314934&assignment_repo_type=AssignmentRepo)\r # appSalud",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cifpfbmoll/caso-practico-mocha---appsalud-tsteam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cifpfbmoll/caso-practico-mocha---appsalud-tsteam/issues"
+  },
+  "homepage": "https://github.com/cifpfbmoll/caso-practico-mocha---appsalud-tsteam#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.3"
+  }
+}
