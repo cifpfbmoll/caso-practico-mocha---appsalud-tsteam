@@ -4,7 +4,7 @@
 
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-f059dc9a6f8d3a56e377f745f24479a46679e63a5d9fe6f495e02850cd0d8118.svg)](https://classroom.github.com/online_ide?assignment_repo_id=6314934&assignment_repo_type=AssignmentRepo)
 
-Con esta aplicación puedes introducir un pesso,altura,fecha y se queda guardado . Además recoge las veces que te registras, y además puede decirte
+Con esta aplicación puedes introducir nombre de usuario, apellidos y su peso,altura y la fecha se quedan guardados . Además recoge las veces que te registras, y además puede decirte
 tu IMC según los datos introducidos.
 - IMC (indice de masa corporal)
 - Peso en kg
@@ -21,8 +21,8 @@ tu IMC según los datos introducidos.
 -
 AppSalud está hecho en javascr2222ipt con los Frameworks [mocha] y [chai][df1] además del propio código javascript
 
->Alto rendimiento
->Todo el Core del programa está comprimido en Bas... y tiene los test con el check verde 
+>Alto rendimiento con tecnologias punteras como (chai i mocha)
+>Todo el Core del programa está comprimido en Bascula... y tiene los test con el check verde en bascula_test.js
 
 ## Features
 
