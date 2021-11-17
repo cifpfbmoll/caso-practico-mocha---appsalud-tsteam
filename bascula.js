@@ -59,6 +59,9 @@ const Bascula = {
   obtenerPesoMaximo() {
     return Math.max(...this.pesos);
   },
+  obtenerPesoMinimo() {
+    return Math.min(...this.pesos);
+  },
 }
 
 module.exports = Bascula;
