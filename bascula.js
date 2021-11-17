@@ -13,9 +13,13 @@ const Bascula = {
     }
   },
 
+  /**
+   * Setters.
+   */
+
   anotarPesoAltura(peso, altura, fecha) {
     if (!peso) {
-      return "¡Debe registar un peso!"
+      return "¡Debe registar un peso!";
     } else {
       let newPesos = [...this.pesos];
       let newAlturas = [...this.alturas];
@@ -25,16 +29,16 @@ const Bascula = {
       if (altura) {
         newAlturas.push(altura);
       } else {
-        newAlturas.push(1)
+        newAlturas.push(1);
       }
 
       if (fecha) {
         newFechas.push(fecha);
       } else {
-        let date = new Date()
-        let day = date.getDate()
-        let month = date.getMonth() + 1
-        let year = date.getFullYear()
+        let date = new Date();
+        let day = date.getDate();
+        let month = date.getMonth() + 1;
+        let year = date.getFullYear();
         newFechas.push(`${day}/${month}/${year}`);
       }
       
@@ -42,6 +46,7 @@ const Bascula = {
       this.alturas = newAlturas;
       this.fechas = newFechas;
       this.anotaciones = this.anotaciones + 1;
+      return "¡Su peso se ha registrado correctamente!";
     }
   },
 }
