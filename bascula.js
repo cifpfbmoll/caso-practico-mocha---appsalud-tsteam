@@ -56,6 +56,9 @@ const Bascula = {
   obtenerNumeroAnotaciones() {
     return this.anotaciones;
   },
+  obtenerPesoMaximo() {
+    return Math.max(...this.pesos);
+  },
 }
 
 module.exports = Bascula;
