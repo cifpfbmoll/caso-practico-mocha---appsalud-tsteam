@@ -35,4 +35,14 @@ describe('Bascula', () => {
     
     expect(actualResult).to.not.eql(expectedResult);
   });
+
+  /**
+   * Casos test de anotarPesoAltura.
+   */
+  it ('Crear anotarPesoAltura', function(){
+    var actualResult = Bascula.anotarPesoAltura(1, 2);
+    var expectedResult = '¡Su peso se ha registrado correctamente!';
+    
+    expect(actualResult).to.eql(expectedResult);
+  });
 });
