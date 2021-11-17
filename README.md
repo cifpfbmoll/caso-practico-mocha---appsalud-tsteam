@@ -48,18 +48,25 @@ Los test [assert] y [should] proporcionan seguridad y aprueba de errores, dejand
 ## Instalación y Configuración de todo.
 
 Proceso de Instalación e uso de AppSalud
+```
+Download Repository from Github
+```
 
-[Node.js](https://nodejs.org/)
+Instalar [Node.js](https://nodejs.org/) en caso de que no este Instalado y Inicializar
 ```
 Requires Node.js (download e Install ) to setup.
+Primero tenemos que Inicializar el proyecto, accedemos a la carpeta en este caso Caso-practico-mocha--appsalud-tsteam
+Luego npm init (Para inicializar)
 ```
 
-Download Repository from Github
+Instalar Mocha y Chai (Para Testing)
 
 ```
-Proceso instalación con capturas aquí
+npm install mocha chai --save-dev
+En la imagen siguiente aparece el comando usado para instalar mocha y chai
 
 ```
+<img src="AppSalud/npm-install-mocha-chai.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;" />
 
 
 Install the dependencies npm i.
