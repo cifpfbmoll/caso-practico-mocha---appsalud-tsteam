@@ -49,6 +49,14 @@ const Bascula = {
       return "¡Su peso se ha registrado correctamente!";
     }
   },
+
+  /**
+   * Getters.
+   */
+
+  obtenerNumeroAnotaciones() {
+    return this.anotaciones;
+  },
 }
 
 module.exports = Bascula;
