@@ -9,10 +9,10 @@ describe('Bascula', () => {
   it ('El contructor devuelve un objeto con las variables pesos, altura, fechas y anotaciones inicializadas.', function(){
     var actualResult = Bascula.constructor();
     var expectedResult = {
-      pesos: [],
-      alturas: [],
-      fechas: [],
-      anotaciones: 0,
+      pesos: [ 75.5, 63.45, 61.90],
+      alturas: [ 1.60, 1.61,],
+      fechas: [ '29/10/2021', '03/11/2021', '11/11/2021'],
+      anotaciones: 3,
     };
     
     expect(actualResult).to.eql(expectedResult);

@@ -1,9 +1,9 @@
 const Bascula = {
   constructor () {
-    this.pesos = [];
-    this.alturas = [];
-    this.fechas = [];
-    this.anotaciones = 0;
+    this.pesos = [ 75.5, 63.45, 61.90];
+    this.alturas = [ 1.60, 1.61,];
+    this.fechas = [ '29/10/2021', '03/11/2021', '11/11/2021'];
+    this.anotaciones = 3;
     
     return {
       pesos: this.pesos,
@@ -16,7 +16,6 @@ const Bascula = {
   /**
    * Setters.
    */
-
   anotarPesoAltura(peso, altura, fecha) {
     if (!peso) {
       return "¡Debe registar un peso!";
