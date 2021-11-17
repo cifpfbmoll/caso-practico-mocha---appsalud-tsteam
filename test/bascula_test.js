@@ -45,4 +45,14 @@ describe('Bascula', () => {
     
     expect(actualResult).to.eql(expectedResult);
   });
+
+  /**
+   * Casos test de obtenerPesoMaximo.
+   */
+  it ('obtenerPesoMaximo', function(){
+    var actualResult = Bascula.obtenerPesoMaximo();
+    var expectedResult = 75.5;
+    
+    expect(actualResult).to.equal(expectedResult);
+  });
 });
