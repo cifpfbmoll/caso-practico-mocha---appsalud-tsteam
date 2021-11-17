@@ -6,7 +6,7 @@ describe('Bascula', () => {
   /**
    * Casos test del constructor.
    */
-  it ('El contructor devuelve un objeto con las variables pesos, altura, fechas y anotaciones inicializadas.', function(){
+  it ('El constructor devuelve un objeto con las variables pesos, altura, fechas y anotaciones inicializadas.', function(){
     var actualResult = Bascula.constructor();
     var expectedResult = {
       pesos: [ 75.5, 63.45, 61.90],
@@ -61,6 +61,7 @@ describe('Bascula', () => {
    */
   it ('obtenerPesoMaximo', function(){
     var actualResult = Bascula.obtenerPesoMaximo();
+    
     var expectedResult = 75.5;
     
     expect(actualResult).to.equal(expectedResult);
@@ -71,8 +72,33 @@ describe('Bascula', () => {
    */
   it ('obtenerPesoMinimo', function(){
     var actualResult = Bascula.obtenerPesoMinimo();
+   
     var expectedResult = 1;
     
     expect(actualResult).to.equal(expectedResult);
   });
+
+   /**
+   * Casos test de CalcularIMC. Los valores son 170 altura, 65 peso
+   */
+    it ('calcularIMC', () => {
+      var actualResult = Bascula.calcularIMC();
+      //console.log(Bascula.calcularIMC())
+     
+      var expectedResult = 'Su peso es normal.';
+      
+      expect(actualResult).to.equal(expectedResult);
+    });
+    /**
+   * Casos test de DescribirIMC.
+   */
+     it ('describirIMC', () => {
+      var actualResult = Bascula.describirIMC();
+      //console.log("describirIMC()--->"+Bascula.describirIMC());
+     
+      var expectedResult ="Su IMC es: 21.60 y su clasificación es: Su peso es normal." ;
+      
+      
+      expect(actualResult).to.equal(expectedResult);
+    });
 });
