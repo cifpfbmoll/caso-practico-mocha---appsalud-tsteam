@@ -65,4 +65,14 @@ describe('Bascula', () => {
     
     expect(actualResult).to.equal(expectedResult);
   });
+
+  /**
+   * Casos test de obtenerPesoMinimo.
+   */
+  it ('obtenerPesoMinimo', function(){
+    var actualResult = Bascula.obtenerPesoMinimo();
+    var expectedResult = 1;
+    
+    expect(actualResult).to.equal(expectedResult);
+  });
 });
