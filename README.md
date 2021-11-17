@@ -89,6 +89,45 @@ en "test": "mocha"
 Como indica la imagen.
 ```
 
+Creación del Constructor (AppSalud)
+<img src="AppSalud/constructor.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+
+```sh
+
+Como hay que crear una báscula o varias se crea este constructor de forma que inicialize con parámetros para así encontar el Max o Min de los parámetros introducidos. A continuación los diferentes métodos que incorpora la báscula .
+
+
+```
+
+
+## Arrays Donde Almacenamos los valores
+
+```sh
++ Pesos[]: decimal
++ alturas[]:decimal
++ fechas[]:Date
++ anotaciones[]:Enteros
+
+
+
+```
+
+# Métodos de báscula (Funcionalidad)
+## Método anotar Peso y Altura
+<img src="AppSalud/metodoAnotarPesoAltura.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+
+```sh
++ anotarPesoAltura() --> Lanzamos las pruebas test con pesos ya inizializados y alturas en el los arrays del constructor para buscar y detectar los valores máximos y mínimos.
+```
+
+## Método obtener Peso Máximo
+<img src="AppSalud/obtenerPesoMaximo.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+```
++ obtenerPesoMaximo() --> Explicando este método es simple , si en el array de pesos[90,80,110] saca el valor del número máximo .
+
+```
+
+
 
 ## Frameworks
 
