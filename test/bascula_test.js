@@ -49,6 +49,16 @@ describe('Bascula', () => {
   /**
    * Casos test de obtenerPesoMaximo.
    */
+  it ('obtenerNumeroAnotaciones', function(){
+    var actualResult = Bascula.obtenerNumeroAnotaciones();
+    var expectedResult = 4;
+    
+    expect(actualResult).to.equal(expectedResult);
+  });
+
+  /**
+   * Casos test de obtenerPesoMaximo.
+   */
   it ('obtenerPesoMaximo', function(){
     var actualResult = Bascula.obtenerPesoMaximo();
     var expectedResult = 75.5;
