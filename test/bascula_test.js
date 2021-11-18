@@ -40,7 +40,7 @@ describe('Bascula', () => {
    * Casos test de anotarPesoAltura.
    */
   it ('Crear anotarPesoAltura', function(){
-    var actualResult = Bascula.anotarPesoAltura(1, 2);
+    var actualResult = Bascula.anotarPesoAltura(75, 1.7);
     var expectedResult = '¡Su peso se ha registrado correctamente!';
     
     expect(actualResult).to.eql(expectedResult);
@@ -61,7 +61,6 @@ describe('Bascula', () => {
    */
   it ('obtenerPesoMaximo', function(){
     var actualResult = Bascula.obtenerPesoMaximo();
-    
     var expectedResult = 75.5;
     
     expect(actualResult).to.equal(expectedResult);
@@ -72,32 +71,17 @@ describe('Bascula', () => {
    */
   it ('obtenerPesoMinimo', function(){
     var actualResult = Bascula.obtenerPesoMinimo();
-   
-    var expectedResult = 1;
+    var expectedResult = 61.9;
     
     expect(actualResult).to.equal(expectedResult);
   });
 
-   /**
-   * Casos test de CalcularIMC. Los valores son 170 altura, 65 peso
-   */
+    /**
+     * Casos test de CalcularIMC. Los valores son 170 altura, 65 peso
+     */
     it ('calcularIMC', () => {
       var actualResult = Bascula.calcularIMC();
-      //console.log(Bascula.calcularIMC())
-     
-      var expectedResult = 'Su peso es normal.';
-      
-      expect(actualResult).to.equal(expectedResult);
-    });
-    /**
-   * Casos test de DescribirIMC.
-   */
-     it ('describirIMC', () => {
-      var actualResult = Bascula.describirIMC();
-      //console.log("describirIMC()--->"+Bascula.describirIMC());
-     
-      var expectedResult ="Su IMC es: 21.60 y su clasificación es: Su peso es normal." ;
-      
+      var expectedResult = 25.95;
       
       expect(actualResult).to.equal(expectedResult);
     });
