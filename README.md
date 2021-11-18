@@ -253,12 +253,41 @@ Este método se lanza para modificar la fecha de nacimiento del paciente.
 ```
 
 ## Método del Paciente obtenerEdad()
-<img src="AppSalud/Paciente/ObtenerEdad.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+<img src="AppSalud/Paciente/obtenerEdad.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
 
 ```sh
 Este método se lanza y se obtiene la edad desde que puso la fecha restando el actual timestamp() .
 
 ```
+
+# Casos Test Paciente (usando mocha y chai)
+## Configuración del archivo /test/paciente_test.js 
+
+<img src="AppSalud/test_Paciente/Test_saludar_del_paciente.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+```sh
+Un método sencillo para saludar desde los datos recogidos en el constructor .
+
+```
+
+## Método Saludar del paciente
+
+<img src="AppSalud/test_Paciente/Test_Inicial_paciente.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+```sh
+Se aprecia los archivos de configuración en la cabecera del archivo paciente_test.js que es donde se encuentra, además se hace de esta forma para poder seguir el orden que necesita la aplicación para funcionar y poder ejecutar los tests via *npm test* .
+
+```
+
+
+## Método Test obtener Nombre del paciente
+
+<img src="AppSalud/test_Paciente/obtenerNombre_test.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+```sh
+Este test obtiene el nombre del paciente desde este archivo usando el *expect* *to.equal* de Mocha y Chai .
+
+```
+
+
+
 
 
 
