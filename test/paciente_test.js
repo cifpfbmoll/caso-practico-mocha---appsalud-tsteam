@@ -27,4 +27,14 @@ describe('Paciente', () => {
     
     expect(actualResult).to.equal(expectedResult);
   });
+
+  /**
+   * Casos test obtenerNombre.
+   */
+  it ('Debe devolver Pepe', function(){
+    var actualResult = Paciente.obtenerNombre();
+    var expectedResult = "Pepe"
+    
+    expect(actualResult).to.equal(expectedResult);
+  });
 });

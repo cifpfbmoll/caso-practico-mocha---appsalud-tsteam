@@ -21,8 +21,10 @@ const Paciente = {
    */
   saludar() {
     return `Hola soy ${this.nombre}`;
-  }
-
+  },
+  obtenerNombre() {
+    return this.nombre;
+  },
 }
 
 
