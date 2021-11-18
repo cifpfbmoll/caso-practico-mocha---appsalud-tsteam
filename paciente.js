@@ -18,6 +18,10 @@ const Paciente = {
     this.nombre = newName;
     return `Tu nuevo nombre es ${this.nombre}`;
   },
+  modificarApellidos(nuevoApellidos) {
+    this.apellidos = nuevoApellidos;
+    return `Tu nuevo apellido es ${this.apellidos}`;
+  },
   
   
   /**

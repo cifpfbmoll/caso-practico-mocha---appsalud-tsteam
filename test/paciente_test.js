@@ -57,4 +57,14 @@ describe('Paciente', () => {
     
     expect(actualResult).to.equal(expectedResult);
   });
+
+  /**
+   * Casos test modificarNombre.
+   */
+  it ('Se modifica el apellido', function(){
+    var actualResult = Paciente.modificarApellidos("Rodolfo");
+    var expectedResult = "Tu nuevo apellido es Rodolfo"
+    
+    expect(actualResult).to.equal(expectedResult);
+  });
 });
