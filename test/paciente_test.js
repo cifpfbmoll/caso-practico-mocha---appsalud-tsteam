@@ -87,4 +87,14 @@ describe('Paciente', () => {
     
     expect(actualResult).to.equal(expectedResult);
   });
+
+   /**
+   * Casos test La Bascula del Paciente.
+   */
+    it ('Asociando báscula al paciente', function(){
+      
+      pepe = Bascula.constructor();
+      
+      //console.log(a);
+    });
 });

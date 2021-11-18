@@ -1,8 +1,11 @@
+const Bascula = require("./bascula");
+
 const Paciente = {
   constructor () {
     this.nombre = 'Pepe';
     this.apellidos = 'Pepito';
     this.fechaDeNacimiento = '18/11/1999';
+    this.miBascula = Bascula.constructor();
       
     return {
       nombre: this.nombre,
@@ -43,6 +46,15 @@ const Paciente = {
   obtenerFechaNacimiento() {
     return this.fechaDeNacimiento;
   },
+
+
+
+ 
+  obtenerBascula(){
+    return this.miBascula
+      
+          
+      }
 }
 
 
