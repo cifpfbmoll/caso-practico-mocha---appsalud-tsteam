@@ -1,20 +1,26 @@
-class Paciente{
-    constructor(nombre,apellidos,fechaNacimiento){
-        this.nombre = nombre;
-        this.apellidos = apellidos;
-        this.fechaNacimiento = fechaNacimiento;
+const Paciente = {
+  constructor () {
+    this.nombre = 'Pepe';
+    this.apellidos = 'Pepito';
+    this.fechaDeNacimiento = '18/11/1999';
+      
+    return {
+      nombre: this.nombre,
+      apellidos: this.apellidos,
+      fechaDeNacimiento: this.fechaDeNacimiento,
     }
+  },
 
-    saludar(){
-        return "Hola"+this.nombre;
-    }
-   get nombre(){
-        return this.nombre;
-    }
-    set nombre(nuevoNombre){
-        this._nombre = nuevoNombre;
-    }
+  /**
+   * Setters.
+   */
+  
+  
+  /**
+   * Getters.
+   */
+
 }
 
-var paciente02 = new Paciente("john","Doe",Date());
+
 module.exports = Paciente;

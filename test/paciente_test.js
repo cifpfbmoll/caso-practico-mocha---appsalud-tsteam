@@ -7,12 +7,14 @@ describe('Paciente', () => {
   /**
    * Casos test del constructor de Paciente.
    */
- 
-it ('El constructor devuelve un objeto con las variables nombre,apellidos, fechaNacimiento.', ()=>{
-    //Falta Inicializar "John Doe 11/11/21 "
-    var paciente02 = new Paciente()
-    var paciente01 = new Paciente()
+  it ('El constructor devuelve un objeto con las variables nombre, apellidos, fechasDeNacimiento inicializadas.', function(){
+    var actualResult = Paciente.constructor();
+    var expectedResult = {
+      nombre: "Pepe",
+      apellidos: "Pepito",
+      fechaDeNacimiento: "18/11/1999",
+    };
     
-     expect(paciente01).to.eql(paciente02);
-  })
+    expect(actualResult).to.eql(expectedResult);
+  });
 });
