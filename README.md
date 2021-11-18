@@ -227,15 +227,30 @@ Este método lanza la edad del paciente.
 Este método lanza los apellidos del paciente.
 
 ```
-## Métodos del Paciente obtenerFechaNacimiento()
+## Métodos del Paciente cambiarApellidos()
 
-<img src="AppSalud/Paciente/obtenerFechaNacimiento.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+<img src="AppSalud/Paciente/ModificarApellidos.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
 
 ```sh
-Este método lanza los apellidos del paciente.
+Este método lanza el cambio de apellidos del paciente.
+
+```
+## Métodos del Paciente obtenerFechaNacimiento()
+
+<img src="AppSalud/Paciente/paciente-fecha.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+
+```sh
+Este método se lanza para obtener la fecha de nacimiento del paciente.
 
 ```
 
+## Método del Paciente modificarFechaNacimento(fecha)
+<img src="AppSalud/Paciente/modificar-fecha.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+
+```sh
+Este método se lanza para modificar la fecha de nacimiento del paciente.
+
+```
 ## Frameworks
 
 
