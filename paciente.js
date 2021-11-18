@@ -22,6 +22,10 @@ const Paciente = {
     this.apellidos = nuevoApellidos;
     return `Tu nuevo apellido es ${this.apellidos}`;
   },
+  modificarFechaNacimento(nuevaFechaDeNacimiento) {
+    this.fechaDeNacimiento = nuevaFechaDeNacimiento;
+    return `Tu nueva fecha de nacimiento es ${this.fechaDeNacimiento}`;
+  },
   
   
   /**

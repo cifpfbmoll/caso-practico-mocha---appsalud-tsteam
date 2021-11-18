@@ -59,7 +59,7 @@ describe('Paciente', () => {
   });
 
   /**
-   * Casos test modificarNombre.
+   * Casos test modificarApellidos.
    */
   it ('Se modifica el apellido', function(){
     var actualResult = Paciente.modificarApellidos("Rodolfo");
@@ -68,7 +68,7 @@ describe('Paciente', () => {
     expect(actualResult).to.equal(expectedResult);
   });
 
-    /**
+  /**
    * Casos test obtenerFechaNacimiento.
    */
     it ('Debe devolver 18/11/1999', function(){
@@ -77,4 +77,14 @@ describe('Paciente', () => {
       
       expect(actualResult).to.equal(expectedResult);
     });
+
+  /**
+   * Casos test modificarFechaNacimento.
+   */
+  it ('Se modifica la fecha de nacimiento', function(){
+    var actualResult = Paciente.modificarFechaNacimento("11/02/2000");
+    var expectedResult = "Tu nueva fecha de nacimiento es 11/02/2000"
+    
+    expect(actualResult).to.equal(expectedResult);
+  });
 });
