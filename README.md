@@ -135,6 +135,34 @@ Como hay que crear una báscula o varias se crea este constructor de forma que i
 
 ```
 
+## Método Calcular IMC(Índice de Masa Corporal)
+<img src="AppSalud/metodoCalcularIMC.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+```
++ calcularIMC() --> Este método calcula Un índice de masa según la altura y el peso de cada persona. La fórmula es la siguiente
+IMC = altura(2)/kg 
+Se aplica Mocha i chai que aparece más abajo,
+aquí solo mostramos el método usado.
+
+```
+
+## Método DescribirIMC(Índice de Masa Corporal )
+<img src="AppSalud/describirIMC.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+```
++ describirIMC(imc) --> Este método devuelve un String "frase" dependiendo del peso pasado, aquí se observa los rangos según el peso que devuelve.
+
+
+```
+
+Una vez que todos los métodos están implementados y funcionando, una vez que tenemos el costructor definido con valores en cada parametro, los parámetros son:pesos,alturas,anotaciones.
+
+Las funciones o métodos obtenerPesoMáximo, obtenerAnotaciones, etc...
+
+## Testing
+
+```sh
+La captura que sigue es del archivo bascula_test.js el cual tiene el código de los test que aplicamos en diferentes procesos ; Al crear la báscula e inicializarla con valores ,estos valores son simulan los pesos introducidos por pacientes / usuarios al momento de pesarse, Ej pesos: [90, 85 ,  75] expresado en "kg".
+
+Lo mismo con las alturas. En el módulo de testing que ya es otro archivo el cual se ejecutan propiedades del framework Mocha y Chai ponemos a prueba diferentes métodos y pruebas unitarias.
 
 ## Frameworks
 
