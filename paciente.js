@@ -19,6 +19,9 @@ const Paciente = {
   /**
    * Getters.
    */
+  saludar() {
+    return `Hola soy ${this.nombre}`;
+  }
 
 }
 

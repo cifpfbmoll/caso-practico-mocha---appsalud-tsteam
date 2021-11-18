@@ -17,4 +17,14 @@ describe('Paciente', () => {
     
     expect(actualResult).to.eql(expectedResult);
   });
+
+  /**
+   * Casos test Saludar.
+   */
+  it ('Debe devolver Hola soy Pepe', function(){
+    var actualResult = Paciente.saludar();
+    var expectedResult = "Hola soy Pepe"
+    
+    expect(actualResult).to.equal(expectedResult);
+  });
 });
