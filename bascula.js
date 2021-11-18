@@ -64,56 +64,14 @@ const Bascula = {
     return Math.min(...this.pesos);
   },
  
-  calcularIMC(altura=170,peso=65){
-    altura = Math.round(altura) / 100;
-    peso = Math.round(peso);
-    var indice = (peso / Math.pow(altura, 2));
-    var resultado = "";
-    if (indice < 20)
-            {
-              resultado = "Su peso es inferior al normal.";
-            }
-            else if (indice >= 20 && indice < 24)
-            {
-              resultado = "Su peso es normal.";
-            }
-            else if (indice >= 24 && indice < 29)
-            {
-              resultado = "Tiene el peso superior al normal.";
-            }
-            else
-            {
-              resultado = "Tiene usted obesidad.";
-            }  
-    return resultado;
+  calcularIMC(){
+    let altura = this.alturas[this.alturas.length - 1];
+    let peso = this.pesos[this.pesos.length - 1];
+
+    let indice = Number((peso / (altura * altura)).toFixed(2));
+
+    return indice;
   },
-
-  describirIMC(altura=180,peso=70) {
-    altura = parseInt(altura)/100;
-    indice=peso/(altura*altura);
-   
-    var resultado = "";
-    if (indice < 20)
-            {
-              resultado = "Su peso es inferior al normal.";
-            }
-            else if (indice >= 20 && indice < 24)
-            {
-              resultado = "Su peso es normal.";
-            }
-            else if (indice >= 24 && indice < 29)
-            {
-              resultado = "Tiene el peso superior al normal.";
-            }
-            else
-            {
-              resultado = "Tiene usted obesidad.";
-            }  
-            
-   return "Su IMC es: " + indice.toFixed(2) + " y su clasificación es: " + resultado;
-  }
-
-
 }
 
 
