@@ -14,6 +14,10 @@ const Paciente = {
   /**
    * Setters.
    */
+  modificarNombre(newName) {
+    this.nombre = newName;
+    return `Tu nuevo nombre es ${this.nombre}`;
+  },
   
   
   /**

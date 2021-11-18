@@ -37,4 +37,14 @@ describe('Paciente', () => {
     
     expect(actualResult).to.equal(expectedResult);
   });
+
+  /**
+   * Casos test modificarNombre.
+   */
+  it ('Se modifica el nombre', function(){
+    var actualResult = Paciente.modificarNombre("Antonio");
+    var expectedResult = "Tu nuevo nombre es Antonio"
+    
+    expect(actualResult).to.equal(expectedResult);
+  });
 });
