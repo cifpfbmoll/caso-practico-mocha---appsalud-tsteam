@@ -67,4 +67,14 @@ describe('Paciente', () => {
     
     expect(actualResult).to.equal(expectedResult);
   });
+
+    /**
+   * Casos test obtenerFechaNacimiento.
+   */
+    it ('Debe devolver 18/11/1999', function(){
+      var actualResult = Paciente.obtenerFechaNacimiento();
+      var expectedResult = "18/11/1999"
+      
+      expect(actualResult).to.equal(expectedResult);
+    });
 });

@@ -36,6 +36,9 @@ const Paciente = {
   obtenerApellidos() {
     return this.apellidos;
   },
+  obtenerFechaNacimiento() {
+    return this.fechaDeNacimiento;
+  },
 }
 
 
