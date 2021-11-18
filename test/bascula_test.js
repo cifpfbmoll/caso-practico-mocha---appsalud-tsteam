@@ -85,4 +85,14 @@ describe('Bascula', () => {
       
       expect(actualResult).to.equal(expectedResult);
     });
+
+    /**
+     * Casos test de DescribirIMC.
+     */
+    it ('describirIMC', () => {
+      var actualResult = Bascula.describirIMC(17);
+      var expectedResult ="Infrapeso (delgadez aceptable)." ;
+      
+      expect(actualResult).to.equal(expectedResult);
+    });
 });
