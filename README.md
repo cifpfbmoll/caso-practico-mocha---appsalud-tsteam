@@ -90,7 +90,7 @@ Como indica la imagen.
 ```
 
 Creación del Constructor (AppSalud)
-<img src="AppSalud/constructor.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+<img src="AppSalud/bascula/constructor.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 
 ```sh
 
@@ -114,14 +114,14 @@ Como hay que crear una báscula o varias se crea este constructor de forma que i
 
 # Métodos de báscula (Funcionalidad)
 ## Método anotar Peso y Altura
-<img src="AppSalud/metodoAnotarPesoAltura.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+<img src="AppSalud/bascula/metodoAnotarPesoAltura.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 
 ```sh
 + anotarPesoAltura() --> Lanzamos las pruebas test con pesos ya inizializados y alturas en el los arrays del constructor para buscar y detectar los valores máximos y mínimos.
 ```
 
 ## Método obtener Peso Máximo
-<img src="AppSalud/obtenerPesoMaximo.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+<img src="AppSalud/bascula/obterPesoMaximo.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 
 ```sh
 + obtenerPesoMaximo() --> Este método funciona así, si en el array de pesos tenemos los valores [90,80,110] saca el valor del  máximo .
@@ -129,14 +129,15 @@ Como hay que crear una báscula o varias se crea este constructor de forma que i
 ```
 
 ## Método obtener Peso Mínimo
-<img src="AppSalud/obtenerPesoMaximo.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+<img src="AppSalud/bascula/obtenerPesoMinimo.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 ```
 + obtenerPesoMaximo() --> Este método funciona así, si en el array de pesos tenemos los valores [90,80,110] saca el valor del  máximo .
 
 ```
 
 ## Método Calcular IMC(Índice de Masa Corporal)
-<img src="AppSalud/metodoCalcularIMC.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+
+<img src="AppSalud/bascula/metodoCalcularIMC.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 ```
 + calcularIMC() --> Este método calcula Un índice de masa según la altura y el peso de cada persona. La fórmula es la siguiente
 IMC = altura(2)/kg 
@@ -146,7 +147,7 @@ aquí solo mostramos el método usado.
 ```
 
 ## Método DescribirIMC(Índice de Masa Corporal )
-<img src="AppSalud/describirIMC.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+<img src="AppSalud/bascula/describirIMC.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 ```
 + describirIMC(imc) --> Este método devuelve un String "frase" dependiendo del peso pasado, aquí se observa los rangos según el peso que devuelve.
 
@@ -157,12 +158,83 @@ Una vez que todos los métodos están implementados y funcionando, una vez que t
 
 Las funciones o métodos obtenerPesoMáximo, obtenerAnotaciones, etc...
 
-## Testing
+# Testing
+## Testing Métodos Bascula "Constructor" (Aplicando Mocha & Chai )
+
+
+<img src="AppSalud/test/test-constructor.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+```
++ Lanzamos Bascula.constructor();
++ Inicializamos los valores de la báscula.
+
+
+```
+
+## Testing Métodos Báscula 
+
+<img src="AppSalud/test/testeandolos-metodos.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+```sh
++ obtenerNumeroAnotaciones() --> Esto son las veces que se usa la báscula.
++ CrearAnotarPeso() --> Se guardan los pesos de cada paciente.
++ obtenerPesoMaximo() --> Lanza el método y devuelve el valor más grande del array.
++ obtenerPesoMinimo() --> Lanza el método y devuelve el valor mínio del array.
+* El caso testing *it* empieza el caso test y con el 
+expect(data).to.equal(data) compara los valores y pasa el test si son iguales.
+
+
+```
+
+# Paciente en AppSalud #
+
+## Métodos del Paciente *Constructor*
+<img src="AppSalud/Paciente/Paciente.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+```
+El constructor es simple tiene los valores según el ejercicio que estamos siguiendo, nombre,apellidos,fecha de nacimiento.
+
+```
+
+## Métodos del Paciente ModificarNombre()
+
+<img src="AppSalud/Paciente/Paciente_cambiarNombre.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
 
 ```sh
-La captura que sigue es del archivo bascula_test.js el cual tiene el código de los test que aplicamos en diferentes procesos ; Al crear la báscula e inicializarla con valores ,estos valores son simulan los pesos introducidos por pacientes / usuarios al momento de pesarse, Ej pesos: [90, 85 ,  75] expresado en "kg".
+Este método sirve para modificar el Nombre del paciente
 
-Lo mismo con las alturas. En el módulo de testing que ya es otro archivo el cual se ejecutan propiedades del framework Mocha y Chai ponemos a prueba diferentes métodos y pruebas unitarias.
+```
+## Métodos del Paciente Saludar()
+
+<img src="AppSalud/Paciente/PacienteSaludar.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+
+```sh
+Este método lanza un saludo del paciente.
+
+```
+
+## Métodos del Paciente Cambiar Nombre()
+
+<img src="AppSalud/Paciente/Paciente_cambiarNombre.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+
+```sh
+Este método lanza la edad del paciente.
+
+```
+
+## Métodos del Paciente obtenerApellidos()
+
+<img src="AppSalud/Paciente/PacienteModificarApellidos.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+
+```sh
+Este método lanza los apellidos del paciente.
+
+```
+## Métodos del Paciente obtenerFechaNacimiento()
+
+<img src="AppSalud/Paciente/obtenerFechaNacimiento.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+
+```sh
+Este método lanza los apellidos del paciente.
+
+```
 
 ## Frameworks
 
