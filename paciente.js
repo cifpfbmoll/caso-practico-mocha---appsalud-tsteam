@@ -29,6 +29,9 @@ const Paciente = {
   obtenerNombre() {
     return this.nombre;
   },
+  obtenerApellidos() {
+    return this.apellidos;
+  },
 }
 
 

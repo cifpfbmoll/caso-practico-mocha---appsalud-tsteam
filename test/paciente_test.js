@@ -47,4 +47,14 @@ describe('Paciente', () => {
     
     expect(actualResult).to.equal(expectedResult);
   });
+
+  /**
+   * Casos test obtenerApellidos.
+   */
+  it ('Debe devolver Pepito', function(){
+    var actualResult = Paciente.obtenerApellidos();
+    var expectedResult = "Pepito"
+    
+    expect(actualResult).to.equal(expectedResult);
+  });
 });
