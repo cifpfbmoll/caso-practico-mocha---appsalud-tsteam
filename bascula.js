@@ -72,6 +72,36 @@ const Bascula = {
 
     return indice;
   },
+
+  describirIMC(imc) {
+    let = "";
+    if (imc < 16) {
+      resultado = "imc inferior a 16: Infrapeso (delgadez severa).";
+    }
+    if (16 <= imc && imc < 17) {
+      resultado = "imc entre 16–17: Infrapeso (delgadez moderada).";
+    }
+    if (17 <= imc && imc < 18.5) {
+      resultado = "Infrapeso (delgadez aceptable).";
+    }
+    if (18.5 <= imc && imc < 25) {
+      resultado = "Peso normal.";
+    }
+    if (25 <= imc && imc < 30) {
+      resultado = "Sobrepeso.";
+    }
+    if (30 <= imc && imc < 35) {
+      resultado = "Obeso (Tipo I).";
+    }
+    if (35 <= imc && imc < 40) {
+      resultado = "Obeso (Tipo II).";
+    }
+    if (40 <= imc) {
+      resultado = "Obeso (Tipo III).";
+    }
+
+   return resultado;
+  }
 }
 
 
