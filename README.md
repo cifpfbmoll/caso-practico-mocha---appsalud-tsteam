@@ -121,7 +121,7 @@ Como hay que crear una báscula o varias se crea este constructor de forma que i
 ```
 
 ## Método obtener Peso Máximo
-<img src="AppSalud/bascula/obterPesoMaximo.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
+<img src="AppSalud/bascula/obtenerPesoMaximo.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 
 ```sh
 + obtenerPesoMaximo() --> Este método funciona así, si en el array de pesos tenemos los valores [90,80,110] saca el valor del  máximo .
