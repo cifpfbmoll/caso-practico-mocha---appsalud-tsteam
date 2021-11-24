@@ -89,7 +89,7 @@ en "test": "mocha"
 Como indica la imagen.
 ```
 
-Creación del Constructor (AppSalud)
+Creación del Constructor (AppSalud)<br>
 <img src="AppSalud/bascula/constructor.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 
 ```sh
