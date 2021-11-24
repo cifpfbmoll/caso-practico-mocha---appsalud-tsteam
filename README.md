@@ -79,7 +79,7 @@ npm i
 node_modules ya estará instalado
 ```
 
-Configuración Package.json
+Configuración Package.json<br>
 <img src="AppSalud/install.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 
 ```sh
