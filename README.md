@@ -69,7 +69,7 @@ En la imagen siguiente aparece el comando usado para instalar mocha y chai
 <img src="AppSalud/npm-install-mocha-chai.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;" />
 
 
-Install the dependencies npm i.
+Install the dependencies npm i.<br>
 <img src="AppSalud/init.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 
 ```sh
