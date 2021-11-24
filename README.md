@@ -69,7 +69,7 @@ En la imagen siguiente aparece el comando usado para instalar mocha y chai
 <img src="AppSalud/npm-install-mocha-chai.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;" />
 
 
-Install the dependencies npm i.
+Install the dependencies npm i.<br>
 <img src="AppSalud/init.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 
 ```sh
@@ -79,7 +79,7 @@ npm i
 node_modules ya estará instalado
 ```
 
-Configuración Package.json
+Configuración Package.json<br>
 <img src="AppSalud/install.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 
 ```sh
@@ -89,7 +89,7 @@ en "test": "mocha"
 Como indica la imagen.
 ```
 
-Creación del Constructor (AppSalud)
+Creación del Constructor (AppSalud)<br>
 <img src="AppSalud/bascula/constructor.png" style="width:550px;height:auto;border-radius:10px;border:2px outset purple;">
 
 ```sh
