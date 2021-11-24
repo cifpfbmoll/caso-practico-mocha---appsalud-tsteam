@@ -264,7 +264,9 @@ Este método se lanza y se obtiene la edad desde que puso la fecha restando el a
 ## Configuración del archivo /test/paciente_test.js 
 
 <img src="AppSalud/test_Paciente/Test_saludar_del_paciente.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+
 ```sh
+
 Un método sencillo para saludar desde los datos recogidos en el constructor .
 
 ```
