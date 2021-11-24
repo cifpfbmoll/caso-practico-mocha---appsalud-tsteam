@@ -253,7 +253,7 @@ Este método se lanza para modificar la fecha de nacimiento del paciente.
 ```
 
 ## Método del Paciente obtenerEdad()
-<img src="AppSalud/Paciente/obtenerEdad.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
+<img src="AppSalud/Paciente/obtenerFechadeNacimiento.png" style="width:550px;height:auto;border-radius:10px;border:2px outset navy;">
 
 ```sh
 Este método se lanza y se obtiene la edad desde que puso la fecha restando el actual timestamp() .
