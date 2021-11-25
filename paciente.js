@@ -11,6 +11,7 @@ const Paciente = {
       nombre: this.nombre,
       apellidos: this.apellidos,
       fechaDeNacimiento: this.fechaDeNacimiento,
+      miBascula: this.miBascula,
     }
   },
 
@@ -18,16 +19,28 @@ const Paciente = {
    * Setters.
    */
   modificarNombre(newName) {
-    this.nombre = newName;
-    return `Tu nuevo nombre es ${this.nombre}`;
+    if (!newName) {
+      return "Debes añadir tu nuevo nombre";
+    } else {
+      this.nombre = newName;
+      return `Tu nuevo nombre es ${this.nombre}`;
+    }
   },
   modificarApellidos(nuevoApellidos) {
-    this.apellidos = nuevoApellidos;
-    return `Tu nuevo apellido es ${this.apellidos}`;
+    if (!nuevoApellidos) {
+      return "Debes añadir tu nuevo apellido";
+    } else {
+      this.apellidos = nuevoApellidos;
+      return `Tu nuevo apellido es ${this.apellidos}`;
+    }
   },
   modificarFechaNacimento(nuevaFechaDeNacimiento) {
-    this.fechaDeNacimiento = nuevaFechaDeNacimiento;
-    return `Tu nueva fecha de nacimiento es ${this.fechaDeNacimiento}`;
+    if (!nuevaFechaDeNacimiento) {
+      return "Debes añadir tu nueva fecha de nacimiento";
+    } else {
+      this.fechaDeNacimiento = nuevaFechaDeNacimiento;
+      return `Tu nueva fecha de nacimiento es ${this.fechaDeNacimiento}`;
+    }
   },
   
   
@@ -58,7 +71,7 @@ const Paciente = {
       return age;
   },
   obtenerBascula() {
-    return this.miBascula      
+    return this.miBascula; 
   },
   calcularIMC(){
     return Bascula.calcularIMC();

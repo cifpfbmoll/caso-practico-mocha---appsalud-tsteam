@@ -46,6 +46,13 @@ describe('Bascula', () => {
     expect(actualResult).to.eql(expectedResult);
   });
 
+  it ('Not equal por no pasar peso', function(){
+    var actualResult = Bascula.anotarPesoAltura();
+    var expectedResult = '¡Debe registar un peso!';
+    
+    expect(actualResult).to.eql(expectedResult);
+  });
+
   /**
    * Casos test de obtenerPesoMaximo.
    */
@@ -54,6 +61,13 @@ describe('Bascula', () => {
     var expectedResult = 4;
     
     expect(actualResult).to.equal(expectedResult);
+  });
+
+  it ('Not equal obtenerNumeroAnotaciones', function(){
+    var actualResult = Bascula.obtenerNumeroAnotaciones();
+    var expectedResult = 9;
+    
+    expect(actualResult).not.to.equal(expectedResult);
   });
 
   /**
@@ -66,6 +80,13 @@ describe('Bascula', () => {
     expect(actualResult).to.equal(expectedResult);
   });
 
+  it ('Not equal obtenerPesoMaximo', function(){
+    var actualResult = Bascula.obtenerPesoMaximo();
+    var expectedResult = 90;
+    
+    expect(actualResult).not.to.equal(expectedResult);
+  });
+
   /**
    * Casos test de obtenerPesoMinimo.
    */
@@ -76,23 +97,51 @@ describe('Bascula', () => {
     expect(actualResult).to.equal(expectedResult);
   });
 
-    /**
-     * Casos test de CalcularIMC. Los valores son 170 altura, 65 peso
-     */
-    it ('calcularIMC', () => {
-      var actualResult = Bascula.calcularIMC();
-      var expectedResult = 25.95;
-      
-      expect(actualResult).to.equal(expectedResult);
-    });
+  it ('Not equal obtenerPesoMinimo', function(){
+    var actualResult = Bascula.obtenerPesoMinimo();
+    var expectedResult = 90;
+    
+    expect(actualResult).not.to.equal(expectedResult);
+  });
 
-    /**
-     * Casos test de DescribirIMC.
-     */
-    it ('describirIMC', () => {
-      var actualResult = Bascula.describirIMC(17);
-      var expectedResult ="Infrapeso (delgadez aceptable)." ;
-      
-      expect(actualResult).to.equal(expectedResult);
-    });
+  /**
+   * Casos test de CalcularIMC. Los valores son 170 altura, 65 peso
+   */
+  it ('calcularIMC', () => {
+    var actualResult = Bascula.calcularIMC();
+    var expectedResult = 25.95;
+    
+    expect(actualResult).to.equal(expectedResult);
+  });
+
+  it ('Not equal calcularIMC', () => {
+    var actualResult = Bascula.calcularIMC();
+    var expectedResult = 90;
+    
+    expect(actualResult).not.to.equal(expectedResult);
+  });
+
+  /**
+   * Casos test de DescribirIMC.
+   */
+  it ('describirIMC 17 Infrapeso', () => {
+    var actualResult = Bascula.describirIMC(17);
+    var expectedResult ="Imc entre 17-18.5: Infrapeso (delgadez aceptable)." ;
+    
+    expect(actualResult).to.equal(expectedResult);
+  });
+
+  it ('describirIMC 25 Sobrepeso', () => {
+    var actualResult = Bascula.describirIMC(26);
+    var expectedResult ="Imc entre 25-30: Sobrepeso." ;
+    
+    expect(actualResult).to.equal(expectedResult);
+  });
+
+  it ('Not equal describirIMC 25 Sobrepeso', () => {
+    var actualResult = Bascula.describirIMC(26);
+    var expectedResult ="Imc entre 17-18.5: Infrapeso (delgadez aceptable)." ;
+    
+    expect(actualResult).not.to.equal(expectedResult);
+  });
 });
