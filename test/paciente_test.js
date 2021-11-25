@@ -243,4 +243,21 @@ describe('Paciente', () => {
 
     expect(actualResult).not.to.equal(expectedResult);
   });
+
+  /**
+   * Casos test modificarBascula.
+   */
+  it ('modificarBascula', ()=> {
+    var actualResult = Paciente.modificarBascula({peso: 75, altura: 1.61, fecha: '25/11/2021'});
+    var expectedResult = "¡Tu nuevo peso se ha registrado correctamente!";
+
+    expect(actualResult).to.eql(expectedResult);
+  });
+
+  it ('Da error si no se añade peso', ()=> {
+    var actualResult = Paciente.modificarBascula({});
+    var expectedResult = "Debes añadir mínimo tu peso";
+
+    expect(actualResult).to.eql(expectedResult);
+  });
 });

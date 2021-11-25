@@ -42,6 +42,14 @@ const Paciente = {
       return `Tu nueva fecha de nacimiento es ${this.fechaDeNacimiento}`;
     }
   },
+  modificarBascula(bascula) {
+    if (!bascula.peso) {
+      return "Debes añadir mínimo tu peso";
+    } else {
+      Bascula.anotarPesoAltura(bascula.peso, bascula?.altura, bascula?.fecha);
+      return "¡Tu nuevo peso se ha registrado correctamente!";
+    }
+  },
   
   
   /**
