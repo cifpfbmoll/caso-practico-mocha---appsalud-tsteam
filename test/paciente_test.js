@@ -88,25 +88,20 @@ describe('Paciente', () => {
     expect(actualResult).to.equal(expectedResult);
   });
 
-   /**
+  /**
    * Casos test La Bascula del Paciente.
    */
-    it ('Asociando báscula al paciente', ()=> {
-      
-     
-      pepe = Bascula.constructor();
-      expect(pepe).to.be.a(typeof(pepe));
-    });
-     /**
+  it ('Asociando báscula al paciente', ()=> {
+    pepe = Bascula.constructor();
+    expect(pepe).to.be.a(typeof(pepe));
+  });
+
+  /**
    * Casos test La Edad del Paciente.
    */
-      it ('Obtener la Edad del Paciente a partir de los datos del paciente', ()=>{
-      
-        pepe = Paciente.obtenerEdad();
-         //pepe.obtenerEdad();
-         //console.log("Pepe tienes......"+pepe+"años");
-         var expectedResult = 21;
-         var actualData =Paciente.obtenerEdad();
-         expect(actualData).to.equal(expectedResult);
-       });
+  it ('Obtener la Edad del Paciente a partir de los datos del paciente', ()=>{  
+    var expectedResult = 21;
+    var actualData = Paciente.obtenerEdad();
+    expect(actualData).to.equal(expectedResult);
+  });
 });

@@ -46,29 +46,23 @@ const Paciente = {
   obtenerFechaNacimiento() {
     return this.fechaDeNacimiento;
   },
-  obtenerEdad() 
-  {
+  obtenerEdad() {
     var dateString = this.fechaDeNacimiento;
       var today = new Date();
       var birthDate = new Date(dateString);
       var age = today.getFullYear() - birthDate.getFullYear();
       var m = today.getMonth() - birthDate.getMonth();
-      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) 
-      {
-          age--;
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age--;
       }
       return age;
   },
-
- 
-  obtenerBascula(){
-    return this.miBascula
-      
-          
-      },
-      calcularIMC(){
-        return  Bascula.calcularIMC();
-      }
+  obtenerBascula() {
+    return this.miBascula      
+  },
+  calcularIMC(){
+    return Bascula.calcularIMC();
+  },
 }
 
 
